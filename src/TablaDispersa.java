@@ -1,6 +1,6 @@
 public class TablaDispersa {
 
-    static final int TAMTABLA = 101;
+    static final int TAMTABLA = 11;
     private int numElementos;
     private double factorCarga;
     private CasaRural [] tabla;
@@ -68,6 +68,10 @@ public class TablaDispersa {
         posicion = direccion(clave);
         if (tabla[posicion] != null) {
             tabla[posicion].esAlta = false;
+            System.out.println("La casa fue eliminada");
+        }
+        else {
+            System.out.println("La casa no existe.");
         }
     }
 }
